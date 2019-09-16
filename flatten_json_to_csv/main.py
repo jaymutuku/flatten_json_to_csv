@@ -4,7 +4,6 @@ import pandas as pd
 import requests
 
 from flatten_json import flatten
-from pandas.io.json import json_normalize
 
 import pprint 
 pp = pprint.PrettyPrinter(indent=4)
