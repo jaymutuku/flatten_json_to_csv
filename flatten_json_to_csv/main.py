@@ -42,14 +42,12 @@ for index, row in df.iterrows():
     else:
         response.raise_for_status()
 
-inputFile = open(json_file)
-print(type(inputFile))
-
-data = json.load(inputFile)
-print(type(data))
+with open(json_file,'r') as inputfile:
+    data = json.load(inputfile)
+    print(type(data))
 
 flattened = (flatten(d) for d in data)     
-inputFile.close()
+inputfile.close()
 
 print(type(flattened))
 
