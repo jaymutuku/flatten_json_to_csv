@@ -29,7 +29,7 @@ headers = {
 
 url = "http://api.tulaa.io/order/deliverynotes/search/code/"
 
-json_file = 'delivery_code_data.json'
+json_file = 'delivery_code_data2.json'
 
 # iterate and get data
 for index, row in df.iterrows():
@@ -49,8 +49,9 @@ for index, row in df.iterrows():
             json.dump(rows_list,outfile)
             outfile.close()
     elif response.status_code == 404:
-        with open('file.txt','a') as f:
-            print(response.content,file=f)
+        with open('file2.log','a') as f:
+            # print("deliverycode - {} headers{} - response - {}".format(searchTerm, headers, response.text))
+            print("deliverycode - {} response - {}".format(searchTerm, response.text),file=f)
         continue
 
     else:
@@ -69,4 +70,4 @@ dataset = pd.DataFrame(flattened)
     
 print(dataset)    
     # export to csv
-dataset.to_csv('delivery_code_data.csv',index=False)
+dataset.to_csv('delivery_code_data2.csv',index=False)
