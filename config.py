@@ -1,2 +1,2 @@
-client_id = "tulaa_web_client"
-client_secret = "6H_VLb3q2/?RuYJ^"
+client_id = "<CLIENT_ID>"
+client_secret = "<CLIENT_SECRET>"
