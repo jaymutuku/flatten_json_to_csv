@@ -17,7 +17,7 @@ df = pd.read_csv("test_ids.csv")
 rows_list = []
 
 headers = {"Authorization": "Bearer " + token}
-url = "https://test-gateway.tulaa.io/cogency-service/credit-info/"
+url = "<METROPOL_URL>"
 
 json_file = 'metropol_test_data.json'
 
