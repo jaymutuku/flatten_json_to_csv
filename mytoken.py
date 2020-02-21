@@ -1,13 +1,12 @@
 import requests
 from config import client_id, client_secret
 
-token_url = "https://gateway.tulaa.io/uaa-server/oauth/token"
+token_url = "<URL_ENDPOINT>"
 
-# token_url = "https:test-gateway.tulaa.io/uaa-server/oauth/token"
 
 payload = {
-    "username": "josphat@tulaa.io",
-    "password": "J00sph@t",
+    "username": "<USERNAME>",
+    "password": "<PASSWORD>",
     "grant_type": "password",
 }
 
