@@ -27,7 +27,7 @@ headers = {
 "programId": "c0d4651a-5d9a-11e7-846e-06f77de3a7f0"
 }
 
-url = "http://api.tulaa.io/order/deliverynotes/search/code/"
+url = "http://api.xxxxx.xx/order/deliverynotes/search/code/"
 
 json_file = 'delivery_code_data2.json'
 
